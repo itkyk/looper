@@ -1,0 +1,25 @@
+{
+  "name": "@itkyk/looper",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/looper.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itkyk/looper.git"
+  },
+  "scripts": {
+    "tsc": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itkyk/looper/issues"
+  },
+  "homepage": "https://github.com/itkyk/looper#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "typescript": "^4.4.3",
+    "tsc": "^2.0.3"
+  }
+}
