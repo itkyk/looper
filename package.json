@@ -8,7 +8,8 @@
     "url": "git+https://github.com/itkyk/looper.git"
   },
   "scripts": {
-    "tsc": "tsc"
+    "tsc": "tsc",
+    "publish": "npm publish --access=public"
   },
   "keywords": [],
   "author": "",
