@@ -31,15 +31,20 @@ class LoopContents {
 
 
     /* hide from users */
-    _init = (_option:Object) => {
+    _init = async(_option:Object) => {
         this.margeOptions(_option);
         this._transformFunction();
-        document.addEventListener("readystatechange", async () => {
+        if (document.readyState !== "complete") {
+          document.addEventListener("readystatechange", async () => {
             if (document.readyState === "complete") {
-                await this._duplicateContents();
-                requestAnimationFrame(this._moveContents);
+              await this._duplicateContents();
+              requestAnimationFrame(this._moveContents);
             }
-        });
+          });
+        } else {
+          await this._duplicateContents();
+          requestAnimationFrame(this._moveContents);
+        }
     };
 
     _duplicateContents = () => {
