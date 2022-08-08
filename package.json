@@ -1,6 +1,6 @@
 {
   "name": "@itkyk/looper",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "dist/looper.js",
   "repository": {
@@ -11,7 +11,7 @@
     "tsc": "tsc",
     "publish": "npm publish --access=public"
   },
-  "keywords": [],
+  "keywords": ["loop"],
   "author": "",
   "license": "ISC",
   "bugs": {
